@@ -1,0 +1,42 @@
+{
+  "name": "seo-for-web-devs",
+  "version": "1.0.0",
+  "description": "Repo for www.seoforwebdevs.com website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run watch\" --names \"💻,📦\" --prefix name",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon ./start.js --ignore public/",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozren1983/seo-for-web-devs.git"
+  },
+  "keywords": [
+    "seo",
+    "web",
+    "development",
+    "search",
+    "engine",
+    "optimization"
+  ],
+  "author": "Ozren Lapcevic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ozren1983/seo-for-web-devs/issues"
+  },
+  "homepage": "https://github.com/ozren1983/seo-for-web-devs#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.5",
+    "mongoose": "^4.11.13",
+    "pug": "^2.0.0-rc.4",
+    "store": "^2.0.12"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.12.1",
+    "webpack": "^3.7.1"
+  }
+}

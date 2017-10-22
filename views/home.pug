@@ -1,0 +1,27 @@
+extends base
+
+block content
+  div.jumbotron
+    h1.display-3 #{h.siteName}
+    p.lead SEO (Search Engine Optimization) is an akward topic for most web developers. Unlike web development, SEO is not an exact science and impact of specific SEO actions can become visible after days, weeks, or even months. Or never...
+    p.lead SEO for Web Devs focuses on SEO topics relevant to web developers and provides current, regularly updated SEO best practices.
+
+  div.row.marketing
+    div.col-12
+      h4
+        a(href="/checklist") Web Developer's SEO Checklist
+      p Checklist for SEO optimizations each website should implement
+
+      div#mc_embed_signup.text-center
+        h2 Subscribe to our mailing list
+        p Join our mailing list to receive updates when new articles are published. We promise we won't spam you! ;-)
+        form#mc-embedded-subscribe-form.validate.form-inline(action=`https://seoforwebdevs.us17.list-manage.com/subscribe/post?u=aaa6aec4a8ca2f8744f266a06&amp;id=${h.mailchimpListID}` method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+          div.mc-field-group.form-group.col-12.justify-content-center
+            label(for="mce-EMAIL")
+            input#mce-EMAIL.required.email.form-control.mx-sm-3.col-6(type="email" value="" name="EMAIL" placeholder="Enter your email")
+            div(style="position: absolute; left: -5000px;" aria-hidden="true")
+              input(type="text" name=`b_aaa6aec4a8ca2f8744f266a06_${h.mailchimpListID}` tabindex="-1" value="")
+            button#mc-embedded-subscribe.btn.btn-primary(type="submit" name="subscribe") Subscribe
+            div#mce-responses.clear
+              div#mce-error-response.response(style="display:none")
+              div#mce-success-response.response(style="display:none")

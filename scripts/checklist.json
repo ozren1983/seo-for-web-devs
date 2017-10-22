@@ -1,0 +1,39 @@
+[
+    {
+        "title": "title tag",
+        "bullets": [
+            {
+                "title": "try to keep title length under 60 characters"
+            },
+            {
+                "title": "limit title length to 70 characters"
+            },
+            {
+                "title": "add unique title to every page of the website"
+            },
+            {
+                "title": "include brand name at the end of the title tag"
+            }
+        ]
+    },
+        {
+        "title": "meta description",
+        "bullets": [
+            {
+                "title": "try to keep description length under 155 characters"
+            },
+            {
+                "title": "limit description length to 160 characters"
+            },
+            {
+                "title": "each meta description should be unique"
+            },
+            {
+                "title": "if possible write compelling description, otherwise omit it"
+            },
+            {
+                "title": "strip double quotation marks or escape them with quot HTML entity"
+            }
+        ]
+    }
+]

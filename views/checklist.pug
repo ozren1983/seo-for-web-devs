@@ -1,0 +1,21 @@
+extends base
+
+block content
+
+  div#checklist
+    div.alert.alert-info(role="alert")
+      strong Heads up! 
+      | You can use this checklist on your next project -> checked items are saved in your browser's local storage.
+      | Depending on the interest from community I might develop this further and support multiple projects, logins, deletion/addition of items, etc. If you find this useful please show your support through #[a(href="mailto:hello@seoforwebdevs.com") email], #[a(href="https://twitter.com/seoforwebdevs") Twitter] or #[a(href="https://github.com/ozren1983/seo-for-web-devs") GitHub].
+
+    h1 Web Developer's SEO Checklist
+
+    each topic, tIndex in checklist
+      h2= topic.title
+      each bullet, bIndex in topic.bullets
+        div.form-check
+
+          input.form-check-input(id=`checkbox-${tIndex}-${bIndex}` type="checkbox" value="")
+          label.form-check-label= bullet
+
+  script(src='js/checklist.js')

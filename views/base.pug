@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    title= `${title} | ${h.siteName}`
+    meta(charset="UTF-8")
+    link(rel="shortcut icon" type="image/png" href="/images/icons/doughnut.png")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+    link(rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
+    link(rel='stylesheet' href='/css/style.css')
+
+    script(async src=`https://www.googletagmanager.com/gtag/js?id=${h.gaTrackingID}`)
+    script.
+      window.dataLayer = window.dataLayer || []
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date())
+      gtag('config', '#{h.gaTrackingID}')
+
+  body
+    div#ga-tracking-id(data-ga-tracking-id=`${h.gaTrackingID}`)
+    div.container
+      div.header.clearfix
+        nav
+          ul.nav.nav-pills.float-right
+            li.nav-item
+              a.nav-link.active(href="/checklist") SEO Checklist
+        h3.text-muted
+          a#brand(href="/") #{h.siteName}
+
+      block content
+
+      footer.footer
+        p &copy; #{h.siteName} 2017
+    
