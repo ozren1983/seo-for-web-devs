@@ -4,10 +4,11 @@
   "description": "Repo for www.seoforwebdevs.com website.",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run watch\" --names \"💻,📦\" --prefix name",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
     "watch": "nodemon ./start.js --ignore public/",
-    "build": "webpack --watch"
+    "assets": "webpack -w --display-max-modules 0",
+    "start": "node ./start.js"
   },
   "repository": {
     "type": "git",
