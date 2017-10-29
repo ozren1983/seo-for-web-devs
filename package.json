@@ -37,6 +37,9 @@
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "nodemon": "^1.12.1",
     "webpack": "^3.7.1"
   }

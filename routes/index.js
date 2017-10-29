@@ -1,8 +1,10 @@
 const express = require('express')
-const router = express.Router()
 
 const checklistController = require('../controllers/checklistController.js')
 const homeController = require('../controllers/homeController.js')
+
+const router = express.Router()
+
 
 // Homepage
 router.get('/', homeController.homepage)
