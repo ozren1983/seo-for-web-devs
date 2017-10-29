@@ -16,7 +16,7 @@
             }
         ]
     },
-        {
+    {
         "title": "meta description",
         "bullets": [
             {
@@ -33,6 +33,324 @@
             },
             {
                 "title": "strip double quotation marks or escape them with quot HTML entity"
+            }
+        ]
+    },
+    {
+        "title": "img tag",
+        "bullets": [
+            {
+                "title": "use alt attributes"
+            },
+            {
+                "title": "limit alt attribute to 125 characters"
+            },
+            {
+                "title": "use keyword in image filename and alt attribute"
+            }
+        ]
+    },
+    {
+        "title": "a tag (hyperlinks)",
+        "bullets": [
+            {
+                "title": "use keywords in anchor text"
+            },
+            {
+                "title": "use rel=\"nofollow\" for paid links and untrusted content"
+            }
+        ]
+    },
+    {
+        "title": "URL Structure",
+        "bullets": [
+            {
+                "title": "use short, human-readable URLs with descriptive keywords"
+            },
+            {
+                "title": "use hyphens to separate words"
+            },
+            {
+                "title": "URLs should reflect category hierarchy"
+            },
+            {
+                "title": "ideally website should have pyramid structure - all pages should be accessible with 3-4 clicks from homepage"
+            },
+            {
+                "title": "if applicable, link back from articles to their category and subcategory"
+            }
+        ]
+    },
+    {
+        "title": "URL Related Tags",
+        "bullets": [
+            {
+                "title": "use link rel=\"canonical\" on all pages to indicate preferred URL"
+            },
+            {
+                "title": "don’t chain canonical tags"
+            },
+            {
+                "title": "use 301 redirects to redirect duplicate content to new URL, and to migrate old URL structure to new one"
+            },
+            {
+                "title": "use link rel=\"next\" and rel=\"prev\" to indicate the relationship between paginated URLs"
+            },
+            {
+                "title": "place content on the same subdomain to preserve authority"
+            }
+        ]
+    },
+    {
+        "title": "www vs non-www",
+        "bullets": [
+            {
+                "title": "both are the same from SEO perspective"
+            },
+            {
+                "title": "www has some technical advantages"
+            },
+            {
+                "title": "choose one and make sure it is used consistently"
+            },
+            {
+                "title": "set 301 redirects from non-preferred domain"
+            },
+            {
+                "title": "set preferred domain in Google Search Console"
+            }
+        ]
+    },
+    {
+        "title": "robots.txt",
+        "bullets": [
+            {
+                "title": "use it to prevent or control crawling"
+            },
+            {
+                "title": "specify a crawl delay to prevent crawlers to overload your website, but only if crawlers are causing problems"
+            },
+            {
+                "title": "indicate the location of sitemap.xml"
+            }
+        ]
+    },
+    {
+        "title": "meta robots tag",
+        "bullets": [
+            {
+                "title": "use it to prevent or control indexing"
+            },
+            {
+                "title": "block search indexing with meta robots noindex parameter <meta name=\"robots\" content=\"noindex\" />"
+            }
+        ]
+    },
+    {
+        "title": "sitemap.xml",
+        "bullets": [
+            {
+                "title": "use sitemap.xml file with priority, changefreq and lastmod attributes"
+            }
+        ]
+    },
+    {
+        "title": "Social meta tags",
+        "bullets": [
+            {
+                "title": "include at least following Open Graph meta tags: url, title, description, type, image"
+            },
+            {
+                "title": "if possible also add site_name, image:width and image:height"
+            },
+            {
+                "title": "prepare optimum image size for Facebook sharing: 1200x630 px"
+            },
+            {
+                "title": "add twitter:card tag with summary_large_image property"
+            }
+        ]
+    },
+    {
+        "title": "Structured Data (Schema.org)",
+        "bullets": [
+            {
+                "title": "add site’s name, logo, contacts and social links"
+            },
+            {
+                "title": "add any of the supported content types like Articles, Books, Events, Products..."
+            },
+            {
+                "title": "use JSON-LD format"
+            },
+            {
+                "title": "follow Google’s recommended procedure for creating new pages: https://developers.google.com/search/docs/guides/prototype#new-page "
+            }
+        ]
+    },
+    {
+        "title": "HTML5 Sections",
+        "bullets": [
+            {
+                "title": "use HTML5 sectioning elements: header, main, footer, aside and section"
+            }
+        ]
+    },
+    {
+        "title": "HTTPS Everywhere",
+        "bullets": [
+            {
+                "title": "set up HTTPS everywhere (not just login, payments and other sensitive pages)"
+            },
+            {
+                "title": "redirect HTTP to HTTPS"
+            }
+        ]
+    },
+    {
+        "title": "HTTP Status Codes",
+        "bullets": [
+            {
+                "title": "use 301 redirects rather than 302 redirects to ensure that link juice is passed"
+            },
+            {
+                "title": "some 404 pages should be 301 redirects to other web pages if there is a good match: valuable links from external sources, mistyped URLs, those that receive large number of users"
+            },
+            {
+                "title": "404 page should contain: not found notification (heading/text), search box, easy to use navigation system, link to homepage"
+            },
+            {
+                "title": "don’t redirect 404 pages to home page"
+            }
+        ]
+    },
+    {
+        "title": "Mobile Optimization",
+        "bullets": [
+            {
+                "title": "optimize page load time"
+            },
+            {
+                "title": "optimize images"
+            },
+            {
+                "title": "don’t use pop-ups"
+            },
+            {
+                "title": "design for fat finger"
+            },
+            {
+                "title": "use Schema.org structured data"
+            },
+            {
+                "title": "use responsive web design and serve desktop and mobile clients on the same URL"
+            },
+            {
+                "title": "serve the same HTML, CSS and JavaScript to all devices"
+            },
+            {
+                "title": "use meta name=\"viewport\" to instruct browsers how to adjust the page to device"
+            },
+            {
+                "title": "use HTML5 instead of Flash"
+            },
+            {
+                "title": "if website has local element, optimize for local search"
+            }
+        ]
+    },
+    {
+        "title": "Optimize for local search",
+        "bullets": [
+            {
+                "title": "if a website has a local business element (e.g. a physical shop, restaurant, club, etc.), it should be optimized for local search"
+            },
+            {
+                "title": "add your business to Google My Business (https://www.google.com/intl/en/business/)"
+            },
+            {
+                "title": "add accurate and appealing pictures"
+            },
+            {
+                "title": "add city and state in the title tag, (h1) headings, URL, content, image alt tags and meta description"
+            },
+            {
+                "title": "add name, address and phone number to the website, but also to other websites like Yelp, Foursquare, social media sites... "
+            },
+            {
+                "title": "embed Google Map that points to your Google My Business Listing"
+            },
+            {
+                "title": "encourage customers to leave a review"
+            }
+        ]
+    },
+    {
+        "title": "Multi Language Websites",
+        "bullets": [
+            {
+                "title": "use a single language for content and navigation on each page"
+            },
+            {
+                "title": "add lang attribute to declare the language of a web page"
+            },
+            {
+                "title": "use subdirectories or subdomains to separate multilingual content"
+            },
+            {
+                "title": "user language switcher (cross-linking each language)"
+            },
+            {
+                "title": "avoid automatic redirections"
+            },
+            {
+                "title": "use hreflang attribute on each page which has translations"
+            }
+        ]
+    },
+    {
+        "title": "AJAX",
+        "bullets": [
+            {
+                "title": "develop with progressive enhancement"
+            },
+            {
+                "title": "build site’s structure and navigation using only HTML, then spice up the appearance and interface with AJAX"
+            },
+            {
+                "title": "use hash fragments - #!"
+            },
+            {
+                "title": "avoid iFrames - Google might not index iFrame content"
+            }
+        ]
+    },
+    {
+        "title": "Page Load Speed",
+        "bullets": [
+            {
+                "title": "optimize Time to Firtst Byte (TTFB)"
+            },
+            {
+                "title": "optimize page load speed"
+            },
+            {
+                "title": "use CDN"
+            },
+            {
+                "title": "optimize database queries"
+            },
+            {
+                "title": "alleviate database load with a caching system (e.g. memcached)"
+            },
+            {
+                "title": "minify and gzip CSS, HTML and JavaScript files"
+            },
+            {
+                "title": "leverage browser caching"
+            },
+            {
+                "title": "optimize images"
             }
         ]
     }
