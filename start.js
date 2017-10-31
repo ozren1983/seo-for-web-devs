@@ -1,6 +1,9 @@
 // import environmental variables from our variables.env file
 require('dotenv').config({ path: 'variables.env' })
 
+// add this to the VERY top of the first file loaded in your app
+const opbeat = require('opbeat').start()
+
 const mongoose = require('mongoose')
 
 // Connect to our Database and handle an bad connections
@@ -19,6 +22,10 @@ require('./models/Checklist')
 const app = require('./app')
 
 app.set('port', process.env.PORT || 7777)
+
+// any errors caught by Express can be logged by Opbeat as well
+app.use(opbeat.middleware.express())
+
 const server = app.listen(app.get('port'), () => {
   console.log(`Express running → PORT ${server.address().port}`)
 })
