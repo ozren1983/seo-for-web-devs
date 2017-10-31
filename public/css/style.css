@@ -46,9 +46,11 @@ a#brand:hover {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-
 #mc_embed_signup h2 {
   margin-bottom: 1.5rem;
+}
+#mc-embedded-subscribe-form .form-group {
+  padding-left: 0;
 }
 
 /* Custom page footer */
