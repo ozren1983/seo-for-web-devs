@@ -1,3 +1,6 @@
+// add this to the VERY top of the first file loaded in your app
+const opbeat = require('opbeat').start()
+
 const express = require('express')
 const path = require('path')
 
@@ -24,6 +27,9 @@ app.use((req, res, next) => {
 
 // After allllll that above middleware, we finally handle our own routes!
 app.use('/', routes)
+
+// any errors caught by Express can be logged by Opbeat as well
+app.use(opbeat.middleware.express())
 
 // If the above routes didn't work, we 404 them and forward to error handler
 app.use(errorHandlers.notFound)
